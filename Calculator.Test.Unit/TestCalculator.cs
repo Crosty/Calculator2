@@ -26,6 +26,7 @@ namespace Calculator.Test.Unit
         [TestCase(-3, 2, -1)]
         [TestCase(3, -2, 1)]
         [TestCase(3, 10, 13)]
+        [TestCase(5, 5, 10)]
         public void Add_AddPosAndNegNumbers_ResultIsCorrect(double a, double b, double result)
         {
             Assert.That(uut_.Add(a, b), Is.EqualTo(result));
